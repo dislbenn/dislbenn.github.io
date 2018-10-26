@@ -2490,7 +2490,7 @@ h6 {
 .submit_btn {
   width: auto;
   display: inline-block;
-  background:#fc3939;
+  background:#20396d;
   background-size: 200% auto;
   padding: 0px 50px;
   color: #fff;
@@ -2940,7 +2940,7 @@ h6 {
   color: #777777;
   margin-bottom: 30px; }
   .ab_widget p a {
-    color: #0044d8; }
+    color: #4871c9; }
   .ab_widget p + p {
     margin-bottom: 0px; }
 
@@ -3010,7 +3010,7 @@ h6 {
   .social_widget .list li:last-child {
     margin-right: 0px; }
   .social_widget .list li:hover a {
-    color: #3bacf0; }
+    color: #4871c9; }
 
 .copy_right_text {
   text-align: center;
