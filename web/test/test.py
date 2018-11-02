@@ -1,7 +1,6 @@
 #!usr/bin/python
 """Test File Web Crawler designed to find products and ratings for products developed and targeting seniors.
 """
-
 import unicodecsv as csv
 from web_crawler import WebCrawler
 
@@ -37,7 +36,7 @@ def main():
             if len(head) > 30:
                 pass
             else:
-                crawler.categories.append(head)
+                crawler.categories.append(head.replace(" ", "").replace("&", ""))
 
     for i, _ in enumerate(crawler.categories):
         # Set the url of the crawler [Done]
@@ -47,7 +46,7 @@ def main():
 
         # Open individual CSV File [Done]
         csv_file = csv.writer(open(crawler.categories[i] + ".csv", "wb"))
-        csv_file.writerow(["#", crawler.categories[i], "Price", "Rating", "Link", "Top Review"])
+        #csv_file.writerow(["Product Name", "Price", "Rating", "Link", "Top Review"])
 
         # Parse html data [Done]
         soup = crawler.data_extract()
@@ -77,7 +76,7 @@ def main():
                 cat_product_rating.append(round(rate, 1))
                 cat_product_price.append(prices[k].text)
 
-                csv_file.writerow([k+1, prods[k].text, cat_product_price[k], str(cat_product_rating[k]) + "/5.0", "https://www.walmart.com" + cat_product_link[k], "blank"])
+                csv_file.writerow([prods[k].text, cat_product_price[k], str(cat_product_rating[k]) + "/5.0", "https://www.walmart.com" + cat_product_link[k], "blank"])
 
             except IndexError:
                 pass

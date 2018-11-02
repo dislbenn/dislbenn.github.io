@@ -93,7 +93,10 @@ class WebCrawler:
         """
         self.clean = True
         try:
-            os.system(". ./move_csv.sh")
+            os.system(". ../move_csv.sh")
         except OSError:
             print("CLEANING FAILED")
         return self.clean
+
+    def csv_to_database(self):
+        os.system("python csv_database.py")
