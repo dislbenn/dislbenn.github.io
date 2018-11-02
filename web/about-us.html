@@ -74,13 +74,13 @@
 						<a class="nav-link" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Easy to use</a>
 						</li>
 						<li class="nav-item">
-						<a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Progress</a>
+						<a class="nav-link" id="profile-tab" data-toggle="tab" href="#progress" role="tab" aria-controls="profile" aria-selected="false">Progress</a>
 						</li>
 						<li class="nav-item">
-						<a class="nav-link active" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Unique Features</a>
+						<a class="nav-link active" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Software Flowchart</a>
 						</li>
 						<li class="nav-item">
-						<a class="nav-link" id="edge-tab" data-toggle="tab" href="#edge" role="tab" aria-controls="edge" aria-selected="false">Demo CSV Files</a>
+						<a class="nav-link" id="edge-tab" data-toggle="tab" href="#edge" role="tab" aria-controls="edge" aria-selected="false">Example CSV Files</a>
 						</li>
 					</ul>
 					<div class="tab-content" id="myTabContent">
@@ -96,31 +96,64 @@
 								</div>
 								<div class="col-lg-6">
 									<div class="chart_img">
-										<img class="img_fluid" src="img/Burndown-Chart Scope (Alpaca).png" alt="">
 										
-										<!--img class="img-fluid" src="img/Burndown-Chart Scope (Buffalo).png" alt=""-->
 									</div>
 								</div>
 							</div>
 						</div>
-						<div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+						<div class="tab-pane fade" id="progress" role="tabpanel" aria-labelledby="profile-tab">
 							<div class="row made_life_text">
 								<div class="col-lg-6">
 									<div class="left_side_text">
-										<h3>We’ve made a life <br />that will change you</h3>
-										<h6>We are here to listen from you deliver exellence</h6>
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp or incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>
-										<a class="main_btn" href="#">Get Started Now</a>
+										<h3>Alpaca Sprint<br />Progression Graph</h3>
+										<h6>Main Goals:</h6>
+										<p> 
+											<ol>
+												<li>Extract data with the web-crawler, and place the data into a CSV file.</li>
+												<li>Debug issues</li>
+												<li>Setup Github page for the web-crawler.</li>
+											</ol>
+										</p>
 									</div>
 								</div>
 								<div class="col-lg-6">
 									<div class="chart_img">
-										<img class="img_fluid" src="img/Burndown-Chart Scope (Alpaca).png" alt="" style="margin-bottom: 25%;">
-										<img class="img-fluid" src="img/Burndown-Chart Scope (Buffalo).png" alt="">
+										<img class="img_fluid" src="images/Burndown-Chart Scope-alpaca.png" alt="" style="margin-bottom: 10%;">
+									</div>
+								</div>
+								<div class="col-lg-6">
+									<div class="left_side_text">
+										<h3>Buffalo Sprint<br />Progression Graph</h3>
+										<h6>Main Goals:</h6>
+										<p>
+											<ol>
+												<li>Find a way to link the review tables to the product table.</li>
+												<li>Automating shell script.</li>
+											</ol>
+										</p>
 									</div>
 								</div>
 								<div class="col-lg-6">
 									<div class="chart_img">
+										<img class="img_fluid" src="images/Burndown-Chart Scope-buffalo.png" alt="" style="margin-bottom: 10%;">
+									</div>
+								</div>
+								<div class="col-lg-6">
+									<div class="left_side_text">
+										<h3>Cheetah Sprint<br />Progression Graph</h3>
+										<h6>Main Goals:</h6>
+										<p>
+											<ol>
+												<li>Creating a GUI for public use</li>
+												<li>Tutorials</li>
+												<li>License & Documentation</li>
+											</ol>
+										</p>
+									</div>
+								</div>
+								<div class="col-lg-6">
+									<div class="chart_img">
+										<img class="img-fluid" src="images/Burndown-Chart Scope-cheetah.png" alt="" style="margin-bottom: 10%;">
 									</div>
 								</div>
 							</div>
@@ -129,15 +162,22 @@
 							<div class="row made_life_text">
 								<div class="col-lg-6">
 									<div class="left_side_text">
-										<h3>We’ve made a life <br />that will change you</h3>
-										<h6>We are here to listen from you deliver exellence</h6>
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp or incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>
-										<a class="main_btn" href="#">Get Started Now</a>
+										<h3>How the system works<br /></h3>
+										<h6>Example Target: Walmart</h6>
+										<p>
+											The web-crawler contains multiple modules, that assist in extracting data from the product site. For developers, a web-crawler class is provided
+											upon download, and can be customized to extract product information from other desired locations.<br /><br />
+											
+											With the Test Module, the web-crawler extracts the targeted products': name, price, rating, link/url, and review. The data is then stored within
+											several CSV files, based upon category.<br /><br />
+											
+											By using the CSV Database Module, the data stored within the CSV, is parsed and stored into a secure SQL database. <br /><br />
+										</p>
 									</div>
 								</div>
 								<div class="col-lg-6">
 									<div class="chart_img">
-										<img class="img-fluid" src="img/chart.jpg" alt="">
+										<img class="img-fluid" src="images/Web_Crawler.png" alt="">
 									</div>
 								</div>
 							</div>
@@ -270,52 +310,16 @@
         <!--================End Made Life Area =================-->
         
         <!--================Screen Area =================-->
-        <section class="screen_area text-center p_120">
-        	<div class="container">
+        <!--section class="screen_area text-center p_120">
+        	-<div class="container">
         		<div class="main_title">
         			<h2>Unique Screens that work perfectly</h2>
         			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
         		</div>
         		<img class="img-fluid" src="img/banner/home-left-1.png" alt="">
         	</div>
-        </section>
-        <!--================End Screen Area =================-->
-        
-        <!--================Made Life Area =================-->
-        <!--section class="made_life_area p_120">
-        	<div class="container">
-        		<div class="made_life_inner">
-					<div class="row made_life_text">
-						<div class="col-lg-6">
-							<div class="left_side_text">
-								<h3>We’ve made a life <br />that will change you</h3>
-								<h6>We are here to listen from you deliver exellence</h6>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp or incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>
-								<a class="main_btn" href="#">Get Started Now</a>
-							</div>
-						</div>
-						<div class="col-lg-6">
-							<div class="chart_img">
-								<img src="img/Burndown-Chart Scope (Alpaca).png">
-							</div>
-						</div>
-					</div>
-        		</div>
-        	</div>
         </section-->
-        <!--================End Made Life Area =================-->
-        
-        <!--================Impress Area =================-->
-        <section class="impress_area p_120">
-        	<div class="container">
-        		<div class="impress_inner">
-					<h2>Got Impressed to our features?</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore  et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
-					<a class="banner_btn2" href="#">Request Free Demo</a>
-        		</div>
-        	</div>
-        </section>
-        <!--================End Impress Area =================-->
+        <!--================End Screen Area =================-->
        
         <!--================Footer Area =================-->
         <footer class="footer_area p_120">
