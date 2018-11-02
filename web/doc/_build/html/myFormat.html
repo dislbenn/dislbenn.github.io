@@ -1,0 +1,216 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>myFormat package &#8212; Web_Crawler 0.1 documentation</title>
+    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+  </head>
+  <body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Web_Crawler 0.1 documentation</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="myformat-package">
+<h1>myFormat package<a class="headerlink" href="#myformat-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="myformat-csv-database-module">
+<h2>myFormat.csv_database module<a class="headerlink" href="#myformat-csv-database-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="myformat-test-module">
+<h2>myFormat.test module<a class="headerlink" href="#myformat-test-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-myFormat.web_crawler">
+<span id="myformat-web-crawler-module"></span><h2>myFormat.web_crawler module<a class="headerlink" href="#module-myFormat.web_crawler" title="Permalink to this headline">¶</a></h2>
+<p>Web Crawler designed to find products and ratings for products developed and targeting seniors.</p>
+<dl class="class">
+<dt id="myFormat.web_crawler.WebCrawler">
+<em class="property">class </em><code class="descclassname">myFormat.web_crawler.</code><code class="descname">WebCrawler</code><span class="sig-paren">(</span><em>url=None</em>, <em>page=None</em>, <em>data=None</em>, <em>clean=False</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/myFormat/web_crawler.html#WebCrawler"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#myFormat.web_crawler.WebCrawler" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<p>Web Crawler</p>
+<dl class="method">
+<dt id="myFormat.web_crawler.WebCrawler.cleanup">
+<code class="descname">cleanup</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/myFormat/web_crawler.html#WebCrawler.cleanup"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#myFormat.web_crawler.WebCrawler.cleanup" title="Permalink to this definition">¶</a></dt>
+<dd><p>Clean up csv files in the current directory, and saves them to csv folder.
+Returns:</p>
+<blockquote>
+<div>self.clean: bool - file cleaned.</div></blockquote>
+</dd></dl>
+
+<dl class="method">
+<dt id="myFormat.web_crawler.WebCrawler.csv_to_database">
+<code class="descname">csv_to_database</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/myFormat/web_crawler.html#WebCrawler.csv_to_database"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#myFormat.web_crawler.WebCrawler.csv_to_database" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sends created csv file data to SQL databasae
+Example:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">csv_to_database</span><span class="p">()</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="myFormat.web_crawler.WebCrawler.data_extract">
+<code class="descname">data_extract</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/myFormat/web_crawler.html#WebCrawler.data_extract"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#myFormat.web_crawler.WebCrawler.data_extract" title="Permalink to this definition">¶</a></dt>
+<dd><p>Extract the url page data and parses the information with BeautifulSoup</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="myFormat.web_crawler.WebCrawler.get_data">
+<code class="descname">get_data</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/myFormat/web_crawler.html#WebCrawler.get_data"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#myFormat.web_crawler.WebCrawler.get_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the data that the webcrawler is parsing
+Returns:</p>
+<blockquote>
+<div>self.data: string - page data.</div></blockquote>
+<dl class="docutils">
+<dt>Example:</dt>
+<dd><div class="first last highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">example_data</span> <span class="o">=</span> <span class="n">crawler</span><span class="o">.</span><span class="n">get_data</span><span class="p">()</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="myFormat.web_crawler.WebCrawler.get_nav_categories">
+<code class="descname">get_nav_categories</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/myFormat/web_crawler.html#WebCrawler.get_nav_categories"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#myFormat.web_crawler.WebCrawler.get_nav_categories" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the categories parsed within the webcrawler.
+Returns:</p>
+<blockquote>
+<div>self.categories: list - list of categories within the navigation bar.</div></blockquote>
+<dl class="docutils">
+<dt>Example:</dt>
+<dd><div class="first last highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">example_categories</span> <span class="o">=</span> <span class="n">crawler</span><span class="o">.</span><span class="n">get_nav_categories</span><span class="p">()</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="myFormat.web_crawler.WebCrawler.get_nav_catlinks">
+<code class="descname">get_nav_catlinks</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/myFormat/web_crawler.html#WebCrawler.get_nav_catlinks"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#myFormat.web_crawler.WebCrawler.get_nav_catlinks" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the category links within the webcrawler.
+Returns:</p>
+<blockquote>
+<div>self.catlinks: list - list of category links within the navigation bar.</div></blockquote>
+<dl class="docutils">
+<dt>Example:</dt>
+<dd><div class="first last highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">example_catlinks</span> <span class="o">=</span> <span class="n">crawler</span><span class="o">.</span><span class="n">get_nav_catlinks</span><span class="p">()</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="myFormat.web_crawler.WebCrawler.get_page">
+<code class="descname">get_page</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/myFormat/web_crawler.html#WebCrawler.get_page"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#myFormat.web_crawler.WebCrawler.get_page" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the page that the webcrawler is parsing data from.
+Returns:</p>
+<blockquote>
+<div>self.page: string - the page of the url.</div></blockquote>
+<dl class="docutils">
+<dt>Example:</dt>
+<dd><div class="first last highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">example_page</span> <span class="o">=</span> <span class="n">crawler</span><span class="o">.</span><span class="n">get_page</span><span class="p">()</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="myFormat.web_crawler.WebCrawler.get_url">
+<code class="descname">get_url</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/myFormat/web_crawler.html#WebCrawler.get_url"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#myFormat.web_crawler.WebCrawler.get_url" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the url that the webcrawler will be accessing.
+Returns:</p>
+<blockquote>
+<div>url: string - the url.</div></blockquote>
+<dl class="docutils">
+<dt>Example:</dt>
+<dd><div class="first last highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">example_url</span> <span class="o">=</span> <span class="n">crawler</span><span class="o">.</span><span class="n">get_url</span><span class="p">()</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-myFormat">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-myFormat" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Web_Crawler 0.1 documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2018, Disaiah Bennett.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.6.6.
+    </div>
+  </body>
+</html>
