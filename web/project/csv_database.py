@@ -24,6 +24,9 @@ for category in cat_sidebar_li:
     links = category.findAll("a", {"class": "SideBarMenu-toggle"})
     item = category.findAll("span", {"class": "SideBarMenu-title"})
 
+    if crawler.count > 16:
+        break
+
     for link in links:
         crawler.catlinks.append(link.get('href'))
 
@@ -33,6 +36,7 @@ for category in cat_sidebar_li:
             pass
         else:
             crawler.categories.append(head)
+    crawler.count += 1
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------
 # Create Function [Connecting to database]
@@ -56,7 +60,7 @@ for i, category in enumerate(crawler.categories):
         log.warning("SQL [DROP TABLE] was not executed successfully.")
         
     try:
-        sql_create = "CREATE TABLE %s (Product_Name VARCHAR(200), Price VARCHAR(10), Rating VARCHAR(7), Link VARCHAR(500), Top_Review VARCHAR(1000))" % table_name
+        sql_create = "CREATE TABLE %s (Product_Name VARCHAR(200), Price VARCHAR(10), Rating VARCHAR(7), Link VARCHAR(500), About VARCHAR(10000))" % table_name
         mycursor.execute(sql_create)
     except:
         log.warning("SQL [CREATE TABLE] was not executed successfully.")
@@ -66,7 +70,7 @@ for i, category in enumerate(crawler.categories):
         file_name = "csv/" + category.replace(" ", "").replace("&", "") + ".csv"
         csvdata = csv.reader(open(file_name, "r"))
         for row in csvdata:
-            sql_insert = "INSERT INTO " + table_name + " (Product_Name, Price, Rating, Link, Top_Review) VALUES (%s, %s, %s, %s, %s)"
+            sql_insert = "INSERT INTO " + table_name + " (Product_Name, Price, Rating, Link, About) VALUES (%s, %s, %s, %s, %s)"
             vals = (row[0], row[1], row[2], row[3], row[4])
             mycursor.execute(sql_insert, vals)
     except:

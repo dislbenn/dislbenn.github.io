@@ -2,7 +2,8 @@
 """Test File Web Crawler designed to find products and ratings for products developed and targeting seniors.
 """
 import unicodecsv as csv
-from src.myFormat.web_crawler import WebCrawler
+from urllib.request import urlopen
+from web_crawler import WebCrawler
 
 __author__ = "Disaiah Bennett"
 __version__ = "0.1"
@@ -42,11 +43,14 @@ def main():
         # Set the url of the crawler [Done]
         crawler.url = crawler.catlinks[i]
 
+        if crawler.count > 16:
+            break
+
         print("Current Category", crawler.categories[i], "URL: ", crawler.catlinks[i])
 
         # Open individual CSV File [Done]
         csv_file = csv.writer(open(crawler.categories[i] + ".csv", "wb"))
-        #csv_file.writerow(["Product Name", "Price", "Rating", "Link", "Top Review"])
+        #csv_file.writerow(["Product Name", "Price", "Rating", "Link", "About", "Top Comment"])
 
         # Parse html data [Done]
         soup = crawler.data_extract()
@@ -72,11 +76,17 @@ def main():
         for k, _ in enumerate(prods):
             try:
                 rate = float(ratings[k].text)
-
                 cat_product_rating.append(round(rate, 1))
                 cat_product_price.append(prices[k].text)
 
-                csv_file.writerow([prods[k].text, cat_product_price[k], str(cat_product_rating[k]) + "/5.0", "https://www.walmart.com" + cat_product_link[k], "blank"])
+                crawler.sub_url = "https://www.walmart.com" + cat_product_link[k]
+                print(crawler.get_sub_url())
+
+                sub_soup = crawler.sub_data_extract()
+                about = sub_soup.find_all("div", {"class": "product-short-description-wrapper"})
+                description = about[0].text
+
+                csv_file.writerow([prods[k].text, cat_product_price[k], str(cat_product_rating[k]) + "/5.0", "https://www.walmart.com" + cat_product_link[k], description])
 
             except IndexError:
                 pass
@@ -88,6 +98,7 @@ def main():
         cat_product_rating.clear()
 
     crawler.cleanup()
+    crawler.csv_to_database()
 
 if __name__ == "__main__":
     main()

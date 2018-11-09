@@ -1,2 +1,28 @@
-# dislbenn.github.io
-Web-Crawler Software 
+# Building Web-Crawler
+Building a Web-Crawler Software is easy, and helps you take advantage of a data mining software. This document will help guide you through understanding this build process.
+
+## Requirements
+
+1. BeautifulSoup4, module is needed and can be installed with pip install BeautifulSoup4
+
+2. Web-Crawler, using one of the following configurations:
+* **macOS** You can either use Web-Crawler for Mac or  See installation instructions.
+* **Linux**  Install Web-Crawler according to the [instructions] for your OS.
+
+## Overview
+
+While it is possible to build a web-crawler using a local python installation, we have a build process that runs on a local environment.  This simplifies initial set up and provides for a very consistent build and test environment.
+
+## Key scripts
+
+The following scripts are found in the `build/` directory. Note that all scripts must be run from the Web-Crawler root directory.
+
+## Basic Flow
+
+## Proxy Settings
+
+
+## Releasing
+
+
+## Reproducibility

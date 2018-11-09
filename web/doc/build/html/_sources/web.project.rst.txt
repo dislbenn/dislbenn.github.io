@@ -1,0 +1,38 @@
+web\.project package
+====================
+
+Submodules
+----------
+
+web\.project\.csv\_database module
+----------------------------------
+
+.. automodule:: web.project.csv_database
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+web\.project\.prod\_extract module
+----------------------------------
+
+.. automodule:: web.project.prod_extract
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+web\.project\.web\_crawler module
+---------------------------------
+
+.. automodule:: web.project.web_crawler
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: web.project
+    :members:
+    :undoc-members:
+    :show-inheritance:

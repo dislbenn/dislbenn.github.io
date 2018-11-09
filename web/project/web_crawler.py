@@ -3,7 +3,6 @@
 """
 import os
 from urllib.request import urlopen
-#from urllib import urlopen (python2)
 from bs4 import BeautifulSoup
 
 __author__ = "Disaiah Bennett"
@@ -12,9 +11,11 @@ __version__ = "0.1"
 class WebCrawler:
     """Web Crawler
     """
-    def __init__(self, url=None, page=None, data=None, clean=False):
+    def __init__(self, url=None, about=None, sub_url=None, page=None, data=None, clean=False):
         """This is the inside of my web crawler
             url: string - the url
+            about: string - product description
+            sub_url: string - sub url
             page: object - the url page.
             data: object - the page data.
             categories: list - navigation categories
@@ -23,6 +24,7 @@ class WebCrawler:
             count: int - category list item count
         """
         self.url = url
+        self.sub_url = sub_url
         self.page = page
         self.data = data
         self.categories = []
@@ -41,6 +43,17 @@ class WebCrawler:
 
         return soup
 
+    def sub_data_extract(self):
+        """Extract the url page data and parses the information with BeautifulSoup
+        """
+        self.page = urlopen(self.sub_url)
+        self.data = self.page.read()
+
+        self.page.close()
+        soup = BeautifulSoup(self.data, "html.parser")
+
+        return soup
+
     def get_url(self):
         """Gets the url that the webcrawler will be accessing.
             Returns:
@@ -49,6 +62,15 @@ class WebCrawler:
                 >>> example_url = crawler.get_url()
         """
         return self.url
+
+    def get_sub_url(self):
+        """Gets the url that the webcrawler will be accessing.
+            Returns:
+                url: string - the url.
+            Example:
+                >>> example_url = crawler.get_url()
+        """
+        return self.sub_url
 
     def get_page(self):
         """Gets the page that the webcrawler is parsing data from.
@@ -99,14 +121,4 @@ class WebCrawler:
         return self.clean
 
     def csv_to_database(self):
-        """Sends created csv file data to SQL databasae
-            Example:
-                >>> csv_to_database()
-        """
-        self.clean = True
-        try:
-            os.system("python csv_database.py")
-        except OSError:
-            print("CSV TO DATABASE FAILED")
-            self.clean = False
-        return self.clean
+        os.system("python csv_database.py")

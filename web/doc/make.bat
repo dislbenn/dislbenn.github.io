@@ -9,7 +9,7 @@ if "%SPHINXBUILD%" == "" (
 )
 set SOURCEDIR=.
 set BUILDDIR=_build
-set SPHINXPROJ=Web_Crawler
+set SPHINXPROJ=Web-Crawler
 
 if "%1" == "" goto help
 

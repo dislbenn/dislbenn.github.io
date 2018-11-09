@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 #
-# Web_Crawler documentation build configuration file, created by
-# sphinx-quickstart on Fri Nov  2 08:00:15 2018.
+# Web-Crawler documentation build configuration file, created by
+# sphinx-quickstart on Fri Nov  9 07:19:07 2018.
 #
 # This file is execfile()d with the current directory set to its
 # containing dir.
@@ -49,7 +49,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = 'Web_Crawler'
+project = 'Web-Crawler'
 copyright = '2018, Disaiah Bennett'
 author = 'Disaiah Bennett'
 
@@ -73,7 +73,6 @@ language = None
 # directories to ignore when looking for source files.
 # This patterns also effect to html_static_path and html_extra_path
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
-exclude_patterns = ['build', 'Thumbs.db', '.DS_Store']
 
 # The name of the Pygments (syntax highlighting) style to use.
 pygments_style = 'sphinx'
@@ -116,7 +115,7 @@ html_sidebars = {
 # -- Options for HTMLHelp output ------------------------------------------
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'Web_Crawlerdoc'
+htmlhelp_basename = 'Web-Crawlerdoc'
 
 
 # -- Options for LaTeX output ---------------------------------------------
@@ -143,7 +142,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'Web_Crawler.tex', 'Web\\_Crawler Documentation',
+    (master_doc, 'Web-Crawler.tex', 'Web-Crawler Documentation',
      'Disaiah Bennett', 'manual'),
 ]
 
@@ -153,7 +152,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'web_crawler', 'Web_Crawler Documentation',
+    (master_doc, 'web-crawler', 'Web-Crawler Documentation',
      [author], 1)
 ]
 
@@ -164,8 +163,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'Web_Crawler', 'Web_Crawler Documentation',
-     author, 'Web_Crawler', 'One line description of project.',
+    (master_doc, 'Web-Crawler', 'Web-Crawler Documentation',
+     author, 'Web-Crawler', 'One line description of project.',
      'Miscellaneous'),
 ]
 
