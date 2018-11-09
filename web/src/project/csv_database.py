@@ -67,7 +67,7 @@ for i, category in enumerate(crawler.categories):
 
     try:
         print(i+1, ": ", "csv/" + category + ".csv")
-        file_name = "csv/" + category.replace(" ", "").replace("&", "") + ".csv"
+        file_name = "csv/db_" + category.replace(" ", "").replace("&", "") + ".csv"
         csvdata = csv.reader(open(file_name, "r"))
         for row in csvdata:
             sql_insert = "INSERT INTO " + table_name + " (Product_Name, Price, Rating, Link, About) VALUES (%s, %s, %s, %s, %s)"

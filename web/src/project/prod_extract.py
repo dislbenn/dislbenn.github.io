@@ -50,7 +50,9 @@ def main():
 
         # Open individual CSV File [Done]
         csv_file = csv.writer(open(crawler.categories[i] + ".csv", "wb"))
-        #csv_file.writerow(["Product Name", "Price", "Rating", "Link", "About", "Top Comment"])
+        csv_file2 = csv.writer(open("db_" + crawler.categories[i] + ".csv", "wb"))        
+        
+        csv_file.writerow(["Product Name", "Price", "Rating", "Link", "About", "Top Comment"])
 
         # Parse html data [Done]
         soup = crawler.data_extract()
@@ -84,14 +86,18 @@ def main():
 
                 sub_soup = crawler.sub_data_extract()
                 about = sub_soup.find_all("div", {"class": "product-short-description-wrapper"})
+                review = sub_soup.find_all("div", {"class": "collapsable-content-container"})
                 description = about[0].text
+                top_review = review[0].text
 
-                csv_file.writerow([prods[k].text, cat_product_price[k], str(cat_product_rating[k]) + "/5.0", "https://www.walmart.com" + cat_product_link[k], description])
+                csv_file.writerow([prods[k].text, cat_product_price[k], str(cat_product_rating[k]) + "/5.0", "https://www.walmart.com" + cat_product_link[k], description, top_review])
+                csv_file2.writerow([prods[k].text, cat_product_price[k], str(cat_product_rating[k]) + "/5.0", "https://www.walmart.com" + cat_product_link[k], description, top_review])
 
             except IndexError:
                 pass
 
-        print(crawler.categories[crawler.count] + ".csv file created.\n")
+        print(crawler.categories[crawler.count] + ".csv file created.")
+        print("db_" + crawler.categories[crawler.count] + ".csv file created.\n")
         crawler.count += 1
         cat_product_price.clear()
         cat_product_link.clear()
