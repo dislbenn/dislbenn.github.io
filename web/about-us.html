@@ -38,8 +38,9 @@
 								<li class="nav-item"><a class="nav-link" href="about-us.html">About</a></li> 
 								<li class="nav-item"><a class="nav-link" href="services.html">Services</a>
 								<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-								<li class="nav-item"><a class="nav-link" href="doc/build/html/index.html">Documentation</a></li>
+								<li class="nav-item"><a class="nav-link" href="doc/build/html/index.html" target="_blanks">Documentation</a></li>
 								<li class="nav-item"><a class="nav-link" href="../index.html">Creator</a></li>
+								<li class="nav-item"><a class="nav-link" href="#">v0.1</a></li>
 							</ul>
 						</div> 
 					</div>
@@ -153,7 +154,7 @@
 								</div>
 								<div class="col-lg-6">
 									<div class="chart_img">
-										<img class="img-fluid" src="images/Burndown-Chart Scope-cheetah.png" alt="" style="margin-bottom: 10%;">
+										<img class="img-fluid" src="images/Burndown-Chart Scope-Cheetah2.png" alt="" style="margin-bottom: 10%;">
 									</div>
 								</div>
 							</div>
@@ -163,21 +164,26 @@
 								<div class="col-lg-6">
 									<div class="left_side_text">
 										<h3>How the system works<br /></h3>
-										<h6>Example Target: Walmart</h6>
+										<h6>Example Target: Walmart - 40 Products Per Category</h6>
 										<p>
-											The web-crawler contains multiple modules, that assist in extracting data from the product site. For developers, a web-crawler class is provided
-											upon download, and can be customized to extract product information from other desired locations.<br /><br />
+											The web-crawler contains multiple modules, that assist in extracting data from the product site. For developers, a web-crawler module is provided
+											upon download, and can be customized to extract product information from other desired locations. However, a connection is required to use the software.<br /><br />
 											
-											With the Test Module, the web-crawler extracts the targeted products': name, price, rating, link/url, and review. The data is then stored within
-											several CSV files, based upon category.<br /><br />
+											In this flowchart, the destination site is Walmart: Home Health Care. Within their Home Health Care page, there are
+											multple categories that contain products used by senior citizens. By using the product-extract module, the web-crawler
+											extracts the targeted products': name, price, rating, link/url, product description, and a review. The data is then stored within
+											several CSV files, based upon the product label and category.<br /><br />
 											
+											After being stored, the product-extract module will contact an apacahe server, and execute the software database module.
 											By using the CSV Database Module, the data stored within the CSV, is parsed and stored into a secure SQL database. <br /><br />
+
+											<u>The flowchart, works in order by the numbers starting from 1.</u>
 										</p>
 									</div>
 								</div>
 								<div class="col-lg-6">
 									<div class="chart_img">
-										<img class="img-fluid" src="images/Web_Crawler.png" alt="">
+										<img class="img-fluid" src="images/Web-Crawler-Chart.png" alt="">
 									</div>
 								</div>
 							</div>
@@ -308,18 +314,6 @@
         	</div>
         </section>
         <!--================End Made Life Area =================-->
-        
-        <!--================Screen Area =================-->
-        <!--section class="screen_area text-center p_120">
-        	-<div class="container">
-        		<div class="main_title">
-        			<h2>Unique Screens that work perfectly</h2>
-        			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
-        		</div>
-        		<img class="img-fluid" src="img/banner/home-left-1.png" alt="">
-        	</div>
-        </section-->
-        <!--================End Screen Area =================-->
        
         <!--================Footer Area =================-->
         <footer class="footer_area p_120">

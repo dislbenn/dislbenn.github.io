@@ -10,10 +10,10 @@ setup(
     author='Disaiah Bennett',
     author_email='officialdisaiahbennett@gmail.com',
     url='https://dislbenn.github.io/web/', # http://location or https://location
-    packages=['myFormat', ], # packages and subpackages containing .py files
+    packages=['project', ], # packages and subpackages containing .py files
     package_dir={'':'src'},
-    package_data={'myFormat':['other/*']}, # other needed files will be installed for user
-    scripts=['src/test',], # the executable files will be installed for user
+    package_data={'project':['other/*']}, # other needed files will be installed for user
+    scripts=['src/prod_extract',], # the executable files will be installed for user
     license='Creative Commons Attribution-Noncommercial-Share Alike license',
     long_description=open('README').read(),
     # more meta-data for repository

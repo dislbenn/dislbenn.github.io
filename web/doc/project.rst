@@ -4,18 +4,18 @@ myFormat package
 Submodules
 ----------
 
-myFormat\.csv\_database module
+project\.csv\_database module
 ------------------------------
 
-.. automodule:: myFormat.csv_database
+.. automodule:: project.csv_database
     :members:
     :undoc-members:
     :show-inheritance:
 
-myFormat\.test module
+project\.test module
 ---------------------
 
-.. automodule:: myFormat.test
+.. automodule:: project.product_search
     :members:
     :undoc-members:
     :show-inheritance:
@@ -23,7 +23,7 @@ myFormat\.test module
 myFormat\.web\_crawler module
 -----------------------------
 
-.. automodule:: myFormat.web_crawler
+.. automodule:: project.web_crawler
     :members:
     :undoc-members:
     :show-inheritance:
@@ -32,7 +32,7 @@ myFormat\.web\_crawler module
 Module contents
 ---------------
 
-.. automodule:: myFormat
+.. automodule:: project
     :members:
     :undoc-members:
     :show-inheritance:

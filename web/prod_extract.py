@@ -2,7 +2,7 @@
 """Test File Web Crawler designed to find products and ratings for products developed and targeting seniors.
 """
 import unicodecsv as csv
-from web_crawler import WebCrawler
+from src.myFormat.web_crawler import WebCrawler
 
 __author__ = "Disaiah Bennett"
 __version__ = "0.1"
