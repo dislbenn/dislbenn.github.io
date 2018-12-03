@@ -1,8 +1,11 @@
 #!usr/bin/python
-"""Test File Web Crawler designed to find products and ratings for products developed and targeting seniors.
+"""Test File Web Crawler designed to find products and ratings for
+   products developed and targeting seniors.
 """
 import unicodecsv as csv
-from urllib.request import urlopen
+import re as regex
+import logging as log
+import datetime
 from web_crawler import WebCrawler
 
 __author__ = "Disaiah Bennett"
@@ -14,6 +17,7 @@ def main():
 
     url = "https://www.walmart.com/cp/home-health-care/1005860"
     crawler = WebCrawler()
+    crawler.open_log()
 
     # Set the url of the crawler
     crawler.url = url
@@ -43,14 +47,15 @@ def main():
         # Set the url of the crawler [Done]
         crawler.url = crawler.catlinks[i]
 
-        if crawler.count > 16:
+        if crawler.count > 17:
             break
 
         print("Current Category", crawler.categories[i], "URL: ", crawler.catlinks[i])
 
         # Open individual CSV File [Done]
         csv_file = csv.writer(open(crawler.categories[i] + ".csv", "wb"))
-        #csv_file.writerow(["Product Name", "Price", "Rating", "Link", "About", "Top Comment"])
+        db_csv_file = csv.writer(open("db_" + crawler.categories[i] + ".csv", "wb"))
+        db_csv_file_review = csv.writer(open(crawler.categories[i] + "_review.csv", "wb"))
 
         # Parse html data [Done]
         soup = crawler.data_extract()
@@ -83,15 +88,31 @@ def main():
                 print(crawler.get_sub_url())
 
                 sub_soup = crawler.sub_data_extract()
-                about = sub_soup.find_all("div", {"class": "product-short-description-wrapper"})
-                description = about[0].text
+                #about = sub_soup.find_all("div", {"class": "about-desc"})
+                about = regex.findall(r'"Product Short Description","displayValue":"(.*?)"', str(sub_soup))
+                review = sub_soup.find_all("div", {"class": "collapsable-content-container"})
+                product_ids = sub_soup.find_all("div", {"class": "valign-middle secondary-info-margin-right copy-mini display-inline-block wm-item-number"})
+                ids = product_ids[0].text
 
-                csv_file.writerow([prods[k].text, cat_product_price[k], str(cat_product_rating[k]) + "/5.0", "https://www.walmart.com" + cat_product_link[k], description])
+                description = str(about).replace("[", "").replace("]", "").replace('"',"")
+
+                for ch in ['\\','`','*','_','{','}','(',')', '<p', '<br', '<', '>','#','+','-','.','!','$','\'', 'br ']:
+                    if ch in description:
+                        description = description.replace(ch, "")
+                csv_file.writerow([prods[k].text, cat_product_price[k], str(cat_product_rating[k]) + "/5.0", "https://www.walmart.com" + cat_product_link[k], description, ids])
+                db_csv_file.writerow([prods[k].text, cat_product_price[k], str(cat_product_rating[k]) + "/5.0", "https://www.walmart.com" + cat_product_link[k], description, ids])
+
+                for comment in review:
+                    db_csv_file_review.writerow([crawler.categories[i], ids, prods[k].text, "https://www.walmart.com" + cat_product_link[k], comment.text])
+                    log.info("DATA EXTRACTION [SUCCESS][%s]" % crawler.get_sub_url())
 
             except IndexError:
-                pass
+                log.warning("DATA EXTRACTION [FAILED][%s]" % crawler.get_sub_url())
 
-        print(crawler.categories[crawler.count] + ".csv file created.\n")
+        print(crawler.categories[crawler.count] + ".csv file created.")
+        print("db_" + crawler.categories[crawler.count] + "_review.csv file created.")
+        print(crawler.categories[crawler.count] + "_review.csv file created.\n")
+
         crawler.count += 1
         cat_product_price.clear()
         cat_product_link.clear()
@@ -99,6 +120,7 @@ def main():
 
     crawler.cleanup()
     crawler.csv_to_database()
+    crawler.log_cleanup()
 
 if __name__ == "__main__":
     main()

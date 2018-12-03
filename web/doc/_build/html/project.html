@@ -23,9 +23,7 @@
     <script type="text/javascript" src="_static/doctools.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="web" href="modules.html" />
-    <link rel="prev" title="Welcome to Web-Crawler’s documentation!" href="index.html" /> 
+    <link rel="search" title="Search" href="search.html" /> 
   </head>
   <body>
     <div class="related" role="navigation" aria-label="related navigation">
@@ -37,12 +35,6 @@
         <li class="right" >
           <a href="py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
-        <li class="right" >
-          <a href="modules.html" title="web"
-             accesskey="N">next</a> |</li>
-        <li class="right" >
-          <a href="index.html" title="Welcome to Web-Crawler’s documentation!"
-             accesskey="P">previous</a> |</li>
         <li class="nav-item nav-item-0"><a href="index.html">Web-Crawler 0.1 documentation</a> &#187;</li> 
       </ul>
     </div>  
@@ -57,8 +49,8 @@
 <div class="section" id="submodules">
 <h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
 </div>
-<div class="section" id="project-csv-database-module">
-<h2>.project.csv_database module<a class="headerlink" href="#project-csv-database-module" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="web-project-csv-database-module">
+<h2>web.project.csv_database module<a class="headerlink" href="#web-project-csv-database-module" title="Permalink to this headline">¶</a></h2>
 </div>
 <div class="section" id="web-project-prod-extract-module">
 <h2>web.project.prod_extract module<a class="headerlink" href="#web-project-prod-extract-module" title="Permalink to this headline">¶</a></h2>
@@ -81,9 +73,19 @@ Returns:</p>
 </dd></dl>
 
 <dl class="method">
+<dt id="project.web_crawler.WebCrawler.compress">
+<code class="descname">compress</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/project/web_crawler.html#WebCrawler.compress"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#project.web_crawler.WebCrawler.compress" title="Permalink to this definition">¶</a></dt>
+<dd><p>Compresses files received from web-crawler.</p>
+</dd></dl>
+
+<dl class="method">
 <dt id="project.web_crawler.WebCrawler.csv_to_database">
 <code class="descname">csv_to_database</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/project/web_crawler.html#WebCrawler.csv_to_database"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#project.web_crawler.WebCrawler.csv_to_database" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Returns extracted csv data to an SQL database.
+Returns:</p>
+<blockquote>
+<div>self.clean: bool - file cleaned.</div></blockquote>
+</dd></dl>
 
 <dl class="method">
 <dt id="project.web_crawler.WebCrawler.data_extract">
@@ -101,6 +103,22 @@ Returns:</p>
 <dl class="docutils">
 <dt>Example:</dt>
 <dd><div class="first last highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">example_data</span> <span class="o">=</span> <span class="n">crawler</span><span class="o">.</span><span class="n">get_data</span><span class="p">()</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="project.web_crawler.WebCrawler.get_description">
+<code class="descname">get_description</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/project/web_crawler.html#WebCrawler.get_description"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#project.web_crawler.WebCrawler.get_description" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the description of the product, located within the targeted web page.
+Returns:</p>
+<blockquote>
+<div>self.about: string - description of product.</div></blockquote>
+<dl class="docutils">
+<dt>Example:</dt>
+<dd><div class="first last highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">example_description</span> <span class="o">=</span> <span class="n">crawler</span><span class="o">.</span><span class="n">get_description</span><span class="p">()</span>
 </pre></div>
 </div>
 </dd>
@@ -188,6 +206,21 @@ Returns:</p>
 </dd></dl>
 
 <dl class="method">
+<dt id="project.web_crawler.WebCrawler.log_cleanup">
+<code class="descname">log_cleanup</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/project/web_crawler.html#WebCrawler.log_cleanup"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#project.web_crawler.WebCrawler.log_cleanup" title="Permalink to this definition">¶</a></dt>
+<dd><p>Clean up log files in the current directory, and saves them to log folder.
+Returns:</p>
+<blockquote>
+<div>self.clean: bool - file cleaned.</div></blockquote>
+</dd></dl>
+
+<dl class="method">
+<dt id="project.web_crawler.WebCrawler.open_log">
+<code class="descname">open_log</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/project/web_crawler.html#WebCrawler.open_log"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#project.web_crawler.WebCrawler.open_log" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creates log file for web-crawler.</p>
+</dd></dl>
+
+<dl class="method">
 <dt id="project.web_crawler.WebCrawler.sub_data_extract">
 <code class="descname">sub_data_extract</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/project/web_crawler.html#WebCrawler.sub_data_extract"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#project.web_crawler.WebCrawler.sub_data_extract" title="Permalink to this definition">¶</a></dt>
 <dd><p>Extract the url page data and parses the information with BeautifulSoup</p>
@@ -207,12 +240,6 @@ Returns:</p>
       </div>
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
         <div class="sphinxsidebarwrapper">
-  <h4>Previous topic</h4>
-  <p class="topless"><a href="index.html"
-                        title="previous chapter">Welcome to Web-Crawler’s documentation!</a></p>
-  <h4>Next topic</h4>
-  <p class="topless"><a href="modules.html"
-                        title="next chapter">web</a></p>
 <div id="searchbox" style="display: none" role="search">
   <h3>Quick search</h3>
     <form class="search" action="search.html" method="get">
@@ -236,12 +263,6 @@ Returns:</p>
         <li class="right" >
           <a href="py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
-        <li class="right" >
-          <a href="modules.html" title="web"
-             >next</a> |</li>
-        <li class="right" >
-          <a href="index.html" title="Welcome to Web-Crawler’s documentation!"
-             >previous</a> |</li>
         <li class="nav-item nav-item-0"><a href="index.html">Web-Crawler 0.1 documentation</a> &#187;</li> 
       </ul>
     </div>

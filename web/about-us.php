@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="icon" href="img/favicon.png" type="image/png">
+        <title>About</title>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="vendors/linericon/style.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
+        <link rel="stylesheet" href="vendors/lightbox/simpleLightbox.css">
+        <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
+        <link rel="stylesheet" href="vendors/animate-css/animate.css">
+        <!-- main css -->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/responsive.css">
+    </head>
+    <body>
+        
+        <!--================Header Menu Area =================-->
+        <header class="header_area">
+            <div class="main_menu">
+            	<nav class="navbar navbar-expand-lg navbar-light">
+					<div class="container box_1620">
+						<!-- Brand and toggle get grouped for better mobile display -->
+						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+							<ul class="nav navbar-nav menu_nav justify-content-center">
+								<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li> 
+								<li class="nav-item active"><a class="nav-link" href="about-us.php">About</a></li> 
+								<li class="nav-item"><a class="nav-link" href="services.php">Services</a>
+								<li class="nav-item"><a class="nav-link" href="contact.php">Contact</a></li>
+                                <li class="nav-item"><a class="nav-link" href="documentation.html">Documentation</a></li>
+								<!--li class="nav-item"><a class="nav-link" href="doc/build/html/genindex.html" target="_blanks">Documentation</a></li-->
+								<li class="nav-item"><a class="nav-link" href="../index.html">Creator</a></li>
+								<li class="nav-item"><a class="nav-link" href="#">v0.1</a></li>
+							</ul>
+						</div> 
+					</div>
+            	</nav>
+            </div>
+        </header>
+        <!--================Header Menu Area =================-->
+        
+        <!--================Home Banner Area =================-->
+        <section class="banner_area">
+            <div class="banner_inner d-flex align-items-center">
+            	<div class="overlay bg-parallax" data-stellar-ratio="0.9" data-stellar-vertical-offset="0" data-background=""></div>
+				<div class="container">
+					<div class="banner_content text-center">
+						<h2>About Us</h2>
+						<div class="page_link">
+							<a href="index.html">HOME</a>
+							<a href="about-us.php">ABOUT</a>
+						</div>
+					</div>
+				</div>
+            </div>
+        </section>
+        <!--================End Home Banner Area =================-->
+        
+        <!--================Made Life Area =================-->
+        <section class="made_life_area p_120">
+        	<div class="container">
+        		<div class="made_life_inner">
+					<ul class="nav nav-tabs" id="myTab" role="tablist">
+						<li class="nav-item">
+						<a class="nav-link" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Easy to use</a>
+						</li>
+						<li class="nav-item">
+						<a class="nav-link" id="profile-tab" data-toggle="tab" href="#progress" role="tab" aria-controls="profile" aria-selected="false">Progress</a>
+						</li>
+						<li class="nav-item">
+						<a class="nav-link active" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Software Flowchart</a>
+						</li>
+						<li class="nav-item">
+						<a class="nav-link" id="edge-tab" data-toggle="tab" href="#edge" role="tab" aria-controls="edge" aria-selected="false">Example CSV Files</a>
+						</li>
+					</ul>
+					<div class="tab-content" id="myTabContent">
+						<div class="tab-pane fade" id="home" role="tabpanel" aria-labelledby="home-tab">
+							<div class="row made_life_text">
+								<div class="col-lg-6">
+									<div class="left_side_text">
+										<h3>We’ve made a product <br />that will change your life</h3>
+										<h6>We are here to listen and deliver you an exellence marketing experience.</h6>
+										<p>The web-crawler was designed to find products of your interest from a targeted site, and return to you the best offers in price and quality.</p><br>
+										<p>The table below, shows a quick example of what the web-crawler will return. The product description and review can be located within the demo section.</p>
+										<a class="main_btn" href="services.php">Get Started Now</a>
+									</div>
+								</div>
+								<div class="col-lg-6">
+									<img class="img-fluid" src="img/banner/home-left-1.png" alt="">
+									<br><br><br><br>
+								</div>
+							</div>
+						</div>
+						<div class="tab-pane fade" id="progress" role="tabpanel" aria-labelledby="profile-tab">
+							<div class="row made_life_text">
+								<div class="col-lg-6">
+									<div class="left_side_text">
+										<h3>Alpaca Sprint<br />Progression Graph</h3>
+										<h6><u>Main Goals:</u></h6>
+										<p> 
+											<ol>
+												<li>Extract data with the web-crawler, and place the data into a CSV file.</li>
+												<li>Debug issues</li>
+												<li>Setup Github page for the web-crawler.</li>
+											</ol>
+										</p>
+									</div>
+								</div>
+								<div class="col-lg-6">
+									<div class="chart_img">
+										<img class="img_fluid" src="images/Burndown-Chart Scope-alpaca.png" alt="" style="margin-bottom: 10%;">
+									</div>
+								</div>
+								<div class="col-lg-6">
+									<div class="left_side_text">
+										<h3>Buffalo Sprint<br />Progression Graph</h3>
+										<h6><u>Main Goals:</u></h6>
+										<p>
+											<ol>
+												<li>Find a way to link the review tables to the product table.</li>
+												<li>Automating shell script.</li>
+											</ol>
+										</p>
+									</div>
+								</div>
+								<div class="col-lg-6">
+									<div class="chart_img">
+										<img class="img_fluid" src="images/Burndown-Chart Scope-buffalo.png" alt="" style="margin-bottom: 10%;">
+									</div>
+								</div>
+								<div class="col-lg-6">
+									<div class="left_side_text">
+										<h3>Cheetah Sprint<br />Progression Graph</h3>
+										<h6><u>Main Goals:</u></h6>
+										<p>
+											<ol>
+												<li>Creating a GUI for public use</li>
+												<li>Tutorials</li>
+												<li>License & Documentation</li>
+											</ol>
+										</p>
+									</div>
+								</div>
+								<div class="col-lg-6">
+									<div class="chart_img">
+										<img class="img-fluid" src="images/Burndown-Chart Scope-Cheetah2.png" alt="" style="margin-bottom: 10%;">
+									</div>
+								</div>
+								<div class="col-lg-6">
+									<div class="left_side_text">
+										<h3>Dolphin Sprint<br />Progression Graph</h3>
+										<h6><u>Main Goals:</u></h6>
+										<p>
+											<ol>
+												<li>Product SQL Database</li>
+												<li>Product Reviews</li>
+											</ol>
+										</p>
+									</div>
+								</div>
+								<div class="col-lg-6">
+									<div class="chart_img">
+										<img class="img-fluid" src="images/Burndown-Chart Scope-Dolphin.png" alt="" style="margin-bottom: 10%;">
+									</div>
+								</div>
+								<div class="col-lg-6">
+									<div class="left_side_text">
+										<h3>Emu Sprint<br />Progression Graph</h3>
+										<h6><u>Main Goals:</u></h6>
+										<p>
+											<ol>
+												<li>Debugging Issues</li>
+												<li>Tutorials</li>
+											</ol>
+										</p>
+									</div>
+								</div>
+								<div class="col-lg-6">
+									<div class="chart_img">
+										<img class="img-fluid" src="images/Burndown-Chart-Emu.png" alt="" style="margin-bottom: 10%;">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tab-pane fade show active" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+							<div class="row made_life_text">
+								<div class="col-lg-6">
+									<div class="left_side_text">
+										<h3>How the system works<br /></h3>
+										<h6>Example Target: Walmart (Limit: 40) Products Per Category</h6>
+										<p>
+											The web-crawler contains multiple modules, that assist in extracting data from the product site. For developers, a web-crawler module is provided
+											upon download, and can be customized to extract product information from other desired locations. However, a connection is required to use the software.<br /><br />
+											
+											In this flowchart, the destination site is Walmart: Home Health Care. Within their Home Health Care page, there are
+											multple categories that contain products used by senior citizens. By using the product-extract module, the web-crawler
+											extracts the targeted products': name, price, rating, link/url, product description, and a review. The data is then stored within
+											several CSV files, based upon the product label and category.<br /><br />
+											
+											After being stored, the product-extract module will contact an apacahe server, and execute the software database module.
+											By using the CSV Database Module, the data stored within the CSV, is parsed and stored into a secure SQL database. <br /><br />
+										</p>
+									</div>
+								</div>
+								<div class="col-lg-6">
+									<div class="chart_img">
+										<img class="img-fluid" src="images/web-crawler.png" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tab-pane fade" id="edge" role="tabpanel" aria-labelledby="edge-tab">
+							<div class="container">
+								<div class="main_title">
+									<h2>Walmart Home Health Care</h2>
+									<h5>Each CSV File represents a category that is located within the Home Health Care page.</h5>
+									At max, the web-crawler can currently extract 40 product's per categories, with the smallest amount extracted being zero.<br><br>
+
+									Click the image below to view the extracted data!
+								</div>
+								<div class="work_inner row">
+									<div class="col-lg-4">
+										<div class="work_item">
+											<i class="lnr"><a href="products.php?category=Bathroom_Scales"><img src="images/bathroomscales.png" style="width: 60%"></a></i>
+											<h4>Bathroom Scales</h4>
+											<a href="src/project/csv/BathroomScales.zip" download="src/project/csv/BathroomScales.zip"><button type="submit">Download</button></a>
+										</div>
+									</div>
+									<div class="col-lg-4">
+										<div class="work_item">
+											<i class="lnr"><a href="products.php?category=BathSafety"><img src="images/bathsafety.png" style="width: 60%"></a></i>
+											<h4>Bath Safety</h4>
+											<a href="src/project/csv/BathSafety.zip" download="src/project/csv/BathSafety.zip"><button type="submit">Download</button></a>
+										</div>
+									</div>
+									<div class="col-lg-4">
+										<div class="work_item">
+											<i class="lnr"><a href="products.php?category=Bedroom_Aids_Safety"><img src="images/bedroomaid.png" style="width: 60%"></a></i>
+											<h4>Bedroom Aids Safety</h4>
+											<a href="src/project/csv/BedroomAidsSafety.zip" download="src/project/csv/BedroomAidsSafety.zip"><button type="submit">Download</button></a>
+										</div>
+									</div>
+									<div class="col-lg-4">
+										<div class="work_item">
+											<i class="lnr"><a href="products.php?category=Braces_Support"><img src="images/bracesupport.png" style="width: 60%"></a></i>
+											<h4>Braces & Support</h4>
+											<a href="src/project/csv/BracesSupport.zip" download="src/project/csv/BracesSupport.zip"><button type="submit">Download</button></a>
+										</div>
+									</div>
+									<div class="col-lg-4">
+										<div class="work_item">
+											<i class="lnr"><a href="products.php?category=Crutches"><img src="images/crutches.png" style="width: 60%"></a></i>
+											<h4>Crutches</h4>
+											<a href="src/project/csv/Crutches.zip" download="src/project/csv/Crutches.zip"><button type="submit">Download</button></a>
+										</div>
+									</div>
+									<div class="col-lg-4">
+										<div class="work_item">
+											<i class="lnr"><a href="products.php?category=Daily_Living_Aids"><img src="images/dailylivingaids.png" style="width: 60%"></a></i>
+											<h4>Daily Living Aids</h4>
+											<a href="src/project/csv/DailyLivingAids.zip" download="src/project/csv/DailyLivingAids.zip"><button type="submit">Download</button></a>
+										</div>
+									</div>
+									<div class="col-lg-4">
+										<div class="work_item">
+											<i class="lnr"><a href="products.php?category=Health_Monitors"><img src="images/healthmoniters.png" style="width: 60%"></a></i>
+											<h4>Health Monitors</h4>
+											<a href="src/project/csv/HealthMonitors.zip" download="src/project/csv/HealthMonitors.zip"><button type="submit">Download</button></a>
+										</div>
+									</div>
+									<div class="col-lg-4">
+										<div class="work_item">
+											<i class="lnr"><a href="products.php?category=Hearing_Aids"><img src="images/hearingaids.png" style="width: 60%"></a></i>
+											<h4>Hearing Aids</h4>
+											<a href="src/project/csv/HearingAids.zip" download="src/project/csv/HearingAids.zip"><button type="submit">Download</button></a>
+										</div>
+									</div>
+									<div class="col-lg-4">
+										<div class="work_item">
+											<i class="lnr"><a href="products.php?category=Home_Diagnostics_Tests"><img src="images/homediag.png" style="width: 60%"></a></i>
+											<h4>Home Diagnostics Tests</h4>
+											<a href="src/project/csv/HomeDiagnosticsTests.zip" download="src/project/csv/HomeDiagnosticsTests.zip"><button type="submit">Download</button></a>
+										</div>
+									</div>
+									<div class="col-lg-4">
+										<div class="work_item">
+											<i class="lnr"><a href="products.php?category=Incontinence"><img src="images/incontinence.png" style="width: 60%"></a></i>
+											<h4>Incontinence</h4>
+											<a href="src/project/csv/Incontinence.zip" download="src/project/csv/Incontinence.zip"><button type="submit">Download</button></a>
+										</div>
+									</div>
+									<div class="col-lg-4">
+										<div class="work_item">
+											<i class="lnr"><a href="products.php?category=Mobility_Equipment_Accessories"><img src="images/mobilityequip.png" style="width: 60%"></a></i>
+											<h4>Mobility Equipment & Accessories</h4>
+											<a href="src/project/csv/MobilityEquipmentAccessories.zip" download="src/project/csv/MobilityEquipmentAccessories.zip"><button type="submit">Download</button></a>
+										</div>
+									</div>
+									<div class="col-lg-4">
+										<div class="work_item">
+											<i class="lnr"><a href="products.php?category=Mobility_Scooters"><img src="images/mobilityscooters.png" style="width: 60%"></a></i>
+											<h4>Mobility Scooters</h4>
+											<a href="src/project/csv/MobilityScooters.zip" download="src/project/csv/MobilityScooters.zip"><button type="submit">Download</button></a>
+										</div>
+									</div>
+									<div class="col-lg-4">
+										<div class="work_item">
+											<i class="lnr"><a href="products.php?category=Patient_Care"><img src="images/patientcare.png" style="width: 60%"></a></i>
+											<h4>Patient Care</h4>
+											<a href="src/project/csv/PatientCare.zip" download="src/project/csv/PatientCare.zip"><button type="submit">Download</button></a>
+										</div>
+									</div>
+									<div class="col-lg-4">
+										<div class="work_item">
+											<i class="lnr"><a href="products.php?category=Walkers_Rollators"><img src="images/walker.png" style="width: 60%"></a></i>
+											<h4>Walkers & Rollators</h4></a>
+											<a href="src/project/csv/WalkersRollators.zip" download="src/project/csv/WalkersRollators.zip"><button type="submit">Download</button></a>
+										</div>
+									</div>
+									<div class="col-lg-4">
+										<div class="work_item">
+											<i class="lnr"><a href="products.php?category=Walking_Canes"><img src="images/walkingcanes.png" style="width: 60%"></a></i>
+											<h4>Walking Canes</h4>
+											<a href="src/project/csv/WalkingCanes.zip" download="src/project/csv/WalkingCanes.zip"><button type="submit">Download</button></a>
+										</div>
+									</div>
+									<div class="col-lg-4">
+										<div class="work_item">
+											<i class="lnr"><a href="products.php?category=Wheel_Chairs"><img src="images/wheelchair.png" style="width: 60%"></a></i>
+											<h4>Wheel Chairs</h4>
+											<a href="src/project/csv/Wheelchairs.zip" download="src/project/csv/Wheelchairs.zip"><button type="submit">Download</button></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+        		</div>
+        	</div>
+        </section>
+        <!--================End Made Life Area =================-->
+       
+        <!--================Footer Area =================-->
+        <footer class="footer_area p_120">
+        	<div class="container">
+        		<div class="row footer_inner">
+        			<div class="col-lg-5 col-sm-6">
+        				<aside class="f_widget ab_widget">
+        					<div class="f_title">
+        						<h3>About Me</h3>
+        					</div>
+        					<p>	
+								My name is Disaiah Bennett, and I am a senior undergraduate student at ECSU. Currently, I am studying in the field of computer science, 
+								with a minor in mathematics. After graduation, I plan on starting a career in software development and then returning to acquire my masters.
+							</p>
+        					<p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+								Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+								<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+							</p>
+        				</aside>
+        			</div>
+        			<div class="col-lg-5 col-sm-6">
+        				<aside class="f_widget news_widget">
+        					<div class="f_title">
+        						<h3>Newsletter</h3>
+        					</div>
+        					<p>Stay updated with our latest trends</p>
+        					<div id="mc_embed_signup">
+                                <form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get" class="subscribe_form relative">
+                                	<div class="input-group d-flex flex-row">
+                                        <input name="EMAIL" placeholder="Enter email address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email Address '" required="" type="email">
+                                        <button class="btn sub-btn"><span class="lnr lnr-arrow-right"></span></button>		
+                                    </div>				
+                                    <div class="mt-10 info"></div>
+                                </form>
+                            </div>
+        				</aside>
+        			</div>
+        			<div class="col-lg-2">
+        				<aside class="f_widget social_widget">
+        					<div class="f_title">
+        						<h3>Follow Me</h3>
+        					</div>
+        					<p>Let us be social</p>
+        					<ul class="list">
+        						<li><a href="https://www.facebook.com/Disaiah.Bennett" target="_blanks"><i class="fa fa-facebook"></i></a></li>
+        						<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+        						<li><a href="https://www.instagram.com/disaiah.bennett/" target="_blanks"><i class="fa fa-instagram"></i></a></li>
+        						<li><a href="https://www.linkedin.com/in/disaiah-bennett-062153164/" target="_blanks"><i class="fa fa-linkedin"></i></a></li>
+        					</ul>
+        				</aside>
+        			</div>
+        		</div>
+        	</div>
+        </footer>
+        <!--================End Footer Area =================-->
+        
+        
+        
+        
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/popper.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/stellar.js"></script>
+        <script src="vendors/lightbox/simpleLightbox.min.js"></script>
+        <script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
+        <script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
+        <script src="vendors/isotope/isotope-min.js"></script>
+        <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+        <script src="js/jquery.ajaxchimp.min.js"></script>
+        <script src="js/mail-script.js"></script>
+        <script src="vendors/counter-up/jquery.waypoints.min.js"></script>
+        <script src="vendors/counter-up/jquery.counterup.min.js"></script>
+        <script src="js/theme.js"></script>
+    </body>
+</html>

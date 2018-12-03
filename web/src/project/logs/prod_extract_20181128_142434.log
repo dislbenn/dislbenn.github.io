@@ -1,0 +1,137 @@
+11/28/2018 02:24:34 PM SQL [INSERT] was not executed successfully. [CaregiverExperience]
+11/28/2018 02:24:34 PM SQL [INSERT] was executed successfully. [CaregiverExperience]
+11/28/2018 02:24:35 PM SQL [INSERT] was not executed successfully. [Wheelchairs]
+11/28/2018 02:24:35 PM SQL [INSERT] was executed successfully. [Wheelchairs]
+11/28/2018 02:24:35 PM SQL [INSERT] was not executed successfully. [WalkersRollators]
+11/28/2018 02:24:35 PM SQL [INSERT] was executed successfully. [WalkersRollators]
+11/28/2018 02:24:35 PM SQL [INSERT] was not executed successfully. [MobilityScooters]
+11/28/2018 02:24:35 PM SQL [INSERT] was executed successfully. [MobilityScooters]
+11/28/2018 02:24:35 PM SQL [INSERT] was not executed successfully. [DiabetesShop]
+11/28/2018 02:24:35 PM SQL [INSERT] was executed successfully. [DiabetesShop]
+11/28/2018 02:24:35 PM SQL [INSERT] was not executed successfully. [HomeDiagnosticsTests]
+11/28/2018 02:24:35 PM SQL [INSERT] was executed successfully. [HomeDiagnosticsTests]
+11/28/2018 02:24:35 PM SQL [INSERT] was not executed successfully. [Incontinence]
+11/28/2018 02:24:35 PM SQL [INSERT] was executed successfully. [Incontinence]
+11/28/2018 02:24:35 PM SQL [INSERT] was not executed successfully. [BathroomScales]
+11/28/2018 02:24:35 PM SQL [INSERT] was executed successfully. [BathroomScales]
+11/28/2018 02:24:35 PM SQL [INSERT] was not executed successfully. [BathSafety]
+11/28/2018 02:24:35 PM SQL [INSERT] was executed successfully. [BathSafety]
+11/28/2018 02:24:35 PM SQL [INSERT] was not executed successfully. [HealthMonitors]
+11/28/2018 02:24:35 PM SQL [INSERT] was executed successfully. [HealthMonitors]
+11/28/2018 02:24:35 PM SQL [INSERT] was not executed successfully. [BedroomAidsSafety]
+11/28/2018 02:24:35 PM SQL [INSERT] was executed successfully. [BedroomAidsSafety]
+11/28/2018 02:24:35 PM SQL [INSERT] was not executed successfully. [DailyLivingAids]
+11/28/2018 02:24:35 PM SQL [INSERT] was executed successfully. [DailyLivingAids]
+11/28/2018 02:24:35 PM SQL [INSERT] was not executed successfully. [BracesSupport]
+11/28/2018 02:24:35 PM SQL [INSERT] was executed successfully. [BracesSupport]
+11/28/2018 02:24:35 PM SQL [INSERT] was not executed successfully. [WalkingCanes]
+11/28/2018 02:24:35 PM SQL [INSERT] was executed successfully. [WalkingCanes]
+11/28/2018 02:24:35 PM SQL [INSERT] was not executed successfully. [Crutches]
+11/28/2018 02:24:35 PM SQL [INSERT] was executed successfully. [Crutches]
+11/28/2018 02:24:35 PM SQL [INSERT] was not executed successfully. [HearingAids]
+11/28/2018 02:24:35 PM SQL [INSERT] was executed successfully. [HearingAids]
+11/28/2018 02:24:35 PM SQL [INSERT] was not executed successfully. [PatientCare]
+11/28/2018 02:24:35 PM SQL [INSERT] was executed successfully. [PatientCare]
+11/28/2018 02:24:35 PM SQL [DROP TABLE] was not executed successfully. [Product_Review][CaregiverExperience_review]
+11/28/2018 02:24:35 PM SQL [DROP TABLE] was executed successfully. [Product_Review][CaregiverExperience_review]
+11/28/2018 02:24:35 PM SQL [CREATE TABLE] was not executed successfully. [Product_Review]
+11/28/2018 02:24:35 PM SQL [CREATE TABLE] was executed successfully. [Product_Review]
+11/28/2018 02:24:35 PM SQL [INSERT] was not executed successfully [Product_Review].
+11/28/2018 02:24:35 PM SQL [INSERT] was executed successfully for [Product_Review].
+11/28/2018 02:24:35 PM SQL [DROP TABLE] was not executed successfully. [Product_Review][Wheelchairs_review]
+11/28/2018 02:24:35 PM SQL [DROP TABLE] was executed successfully. [Product_Review][Wheelchairs_review]
+11/28/2018 02:24:35 PM SQL [CREATE TABLE] was not executed successfully. [Product_Review]
+11/28/2018 02:24:35 PM SQL [CREATE TABLE] was executed successfully. [Product_Review]
+11/28/2018 02:24:35 PM SQL [INSERT] was not executed successfully [Product_Review].
+11/28/2018 02:24:35 PM SQL [INSERT] was executed successfully for [Product_Review].
+11/28/2018 02:24:35 PM SQL [DROP TABLE] was not executed successfully. [Product_Review][WalkersRollators_review]
+11/28/2018 02:24:35 PM SQL [DROP TABLE] was executed successfully. [Product_Review][WalkersRollators_review]
+11/28/2018 02:24:35 PM SQL [CREATE TABLE] was not executed successfully. [Product_Review]
+11/28/2018 02:24:35 PM SQL [CREATE TABLE] was executed successfully. [Product_Review]
+11/28/2018 02:24:35 PM SQL [INSERT] was not executed successfully [Product_Review].
+11/28/2018 02:24:35 PM SQL [INSERT] was executed successfully for [Product_Review].
+11/28/2018 02:24:35 PM SQL [DROP TABLE] was not executed successfully. [Product_Review][MobilityScooters_review]
+11/28/2018 02:24:35 PM SQL [DROP TABLE] was executed successfully. [Product_Review][MobilityScooters_review]
+11/28/2018 02:24:35 PM SQL [CREATE TABLE] was not executed successfully. [Product_Review]
+11/28/2018 02:24:35 PM SQL [CREATE TABLE] was executed successfully. [Product_Review]
+11/28/2018 02:24:35 PM SQL [INSERT] was not executed successfully [Product_Review].
+11/28/2018 02:24:35 PM SQL [INSERT] was executed successfully for [Product_Review].
+11/28/2018 02:24:35 PM SQL [DROP TABLE] was not executed successfully. [Product_Review][DiabetesShop_review]
+11/28/2018 02:24:35 PM SQL [DROP TABLE] was executed successfully. [Product_Review][DiabetesShop_review]
+11/28/2018 02:24:35 PM SQL [CREATE TABLE] was not executed successfully. [Product_Review]
+11/28/2018 02:24:35 PM SQL [CREATE TABLE] was executed successfully. [Product_Review]
+11/28/2018 02:24:35 PM SQL [INSERT] was not executed successfully [Product_Review].
+11/28/2018 02:24:35 PM SQL [INSERT] was executed successfully for [Product_Review].
+11/28/2018 02:24:35 PM SQL [DROP TABLE] was not executed successfully. [Product_Review][HomeDiagnosticsTests_review]
+11/28/2018 02:24:35 PM SQL [DROP TABLE] was executed successfully. [Product_Review][HomeDiagnosticsTests_review]
+11/28/2018 02:24:35 PM SQL [CREATE TABLE] was not executed successfully. [Product_Review]
+11/28/2018 02:24:35 PM SQL [CREATE TABLE] was executed successfully. [Product_Review]
+11/28/2018 02:24:35 PM SQL [INSERT] was not executed successfully [Product_Review].
+11/28/2018 02:24:35 PM SQL [INSERT] was executed successfully for [Product_Review].
+11/28/2018 02:24:35 PM SQL [DROP TABLE] was not executed successfully. [Product_Review][Incontinence_review]
+11/28/2018 02:24:35 PM SQL [DROP TABLE] was executed successfully. [Product_Review][Incontinence_review]
+11/28/2018 02:24:35 PM SQL [CREATE TABLE] was not executed successfully. [Product_Review]
+11/28/2018 02:24:35 PM SQL [CREATE TABLE] was executed successfully. [Product_Review]
+11/28/2018 02:24:35 PM SQL [INSERT] was not executed successfully [Product_Review].
+11/28/2018 02:24:35 PM SQL [INSERT] was executed successfully for [Product_Review].
+11/28/2018 02:24:35 PM SQL [DROP TABLE] was not executed successfully. [Product_Review][BathroomScales_review]
+11/28/2018 02:24:35 PM SQL [DROP TABLE] was executed successfully. [Product_Review][BathroomScales_review]
+11/28/2018 02:24:35 PM SQL [CREATE TABLE] was not executed successfully. [Product_Review]
+11/28/2018 02:24:35 PM SQL [CREATE TABLE] was executed successfully. [Product_Review]
+11/28/2018 02:24:35 PM SQL [INSERT] was not executed successfully [Product_Review].
+11/28/2018 02:24:35 PM SQL [INSERT] was executed successfully for [Product_Review].
+11/28/2018 02:24:35 PM SQL [DROP TABLE] was not executed successfully. [Product_Review][BathSafety_review]
+11/28/2018 02:24:35 PM SQL [DROP TABLE] was executed successfully. [Product_Review][BathSafety_review]
+11/28/2018 02:24:35 PM SQL [CREATE TABLE] was not executed successfully. [Product_Review]
+11/28/2018 02:24:35 PM SQL [CREATE TABLE] was executed successfully. [Product_Review]
+11/28/2018 02:24:35 PM SQL [INSERT] was not executed successfully [Product_Review].
+11/28/2018 02:24:35 PM SQL [INSERT] was executed successfully for [Product_Review].
+11/28/2018 02:24:35 PM SQL [DROP TABLE] was not executed successfully. [Product_Review][HealthMonitors_review]
+11/28/2018 02:24:35 PM SQL [DROP TABLE] was executed successfully. [Product_Review][HealthMonitors_review]
+11/28/2018 02:24:35 PM SQL [CREATE TABLE] was not executed successfully. [Product_Review]
+11/28/2018 02:24:35 PM SQL [CREATE TABLE] was executed successfully. [Product_Review]
+11/28/2018 02:24:35 PM SQL [INSERT] was not executed successfully [Product_Review].
+11/28/2018 02:24:35 PM SQL [INSERT] was executed successfully for [Product_Review].
+11/28/2018 02:24:35 PM SQL [DROP TABLE] was not executed successfully. [Product_Review][BedroomAidsSafety_review]
+11/28/2018 02:24:35 PM SQL [DROP TABLE] was executed successfully. [Product_Review][BedroomAidsSafety_review]
+11/28/2018 02:24:35 PM SQL [CREATE TABLE] was not executed successfully. [Product_Review]
+11/28/2018 02:24:35 PM SQL [CREATE TABLE] was executed successfully. [Product_Review]
+11/28/2018 02:24:35 PM SQL [INSERT] was not executed successfully [Product_Review].
+11/28/2018 02:24:35 PM SQL [INSERT] was executed successfully for [Product_Review].
+11/28/2018 02:24:35 PM SQL [DROP TABLE] was not executed successfully. [Product_Review][DailyLivingAids_review]
+11/28/2018 02:24:35 PM SQL [DROP TABLE] was executed successfully. [Product_Review][DailyLivingAids_review]
+11/28/2018 02:24:35 PM SQL [CREATE TABLE] was not executed successfully. [Product_Review]
+11/28/2018 02:24:35 PM SQL [CREATE TABLE] was executed successfully. [Product_Review]
+11/28/2018 02:24:35 PM SQL [INSERT] was not executed successfully [Product_Review].
+11/28/2018 02:24:35 PM SQL [INSERT] was executed successfully for [Product_Review].
+11/28/2018 02:24:35 PM SQL [DROP TABLE] was not executed successfully. [Product_Review][BracesSupport_review]
+11/28/2018 02:24:35 PM SQL [DROP TABLE] was executed successfully. [Product_Review][BracesSupport_review]
+11/28/2018 02:24:35 PM SQL [CREATE TABLE] was not executed successfully. [Product_Review]
+11/28/2018 02:24:35 PM SQL [CREATE TABLE] was executed successfully. [Product_Review]
+11/28/2018 02:24:35 PM SQL [INSERT] was not executed successfully [Product_Review].
+11/28/2018 02:24:35 PM SQL [INSERT] was executed successfully for [Product_Review].
+11/28/2018 02:24:35 PM SQL [DROP TABLE] was not executed successfully. [Product_Review][WalkingCanes_review]
+11/28/2018 02:24:35 PM SQL [DROP TABLE] was executed successfully. [Product_Review][WalkingCanes_review]
+11/28/2018 02:24:35 PM SQL [CREATE TABLE] was not executed successfully. [Product_Review]
+11/28/2018 02:24:35 PM SQL [CREATE TABLE] was executed successfully. [Product_Review]
+11/28/2018 02:24:35 PM SQL [INSERT] was not executed successfully [Product_Review].
+11/28/2018 02:24:35 PM SQL [INSERT] was executed successfully for [Product_Review].
+11/28/2018 02:24:35 PM SQL [DROP TABLE] was not executed successfully. [Product_Review][Crutches_review]
+11/28/2018 02:24:35 PM SQL [DROP TABLE] was executed successfully. [Product_Review][Crutches_review]
+11/28/2018 02:24:35 PM SQL [CREATE TABLE] was not executed successfully. [Product_Review]
+11/28/2018 02:24:35 PM SQL [CREATE TABLE] was executed successfully. [Product_Review]
+11/28/2018 02:24:35 PM SQL [INSERT] was not executed successfully [Product_Review].
+11/28/2018 02:24:35 PM SQL [INSERT] was executed successfully for [Product_Review].
+11/28/2018 02:24:35 PM SQL [DROP TABLE] was not executed successfully. [Product_Review][HearingAids_review]
+11/28/2018 02:24:35 PM SQL [DROP TABLE] was executed successfully. [Product_Review][HearingAids_review]
+11/28/2018 02:24:35 PM SQL [CREATE TABLE] was not executed successfully. [Product_Review]
+11/28/2018 02:24:35 PM SQL [CREATE TABLE] was executed successfully. [Product_Review]
+11/28/2018 02:24:35 PM SQL [INSERT] was not executed successfully [Product_Review].
+11/28/2018 02:24:35 PM SQL [INSERT] was executed successfully for [Product_Review].
+11/28/2018 02:24:35 PM SQL [DROP TABLE] was not executed successfully. [Product_Review][PatientCare_review]
+11/28/2018 02:24:35 PM SQL [DROP TABLE] was executed successfully. [Product_Review][PatientCare_review]
+11/28/2018 02:24:35 PM SQL [CREATE TABLE] was not executed successfully. [Product_Review]
+11/28/2018 02:24:35 PM SQL [CREATE TABLE] was executed successfully. [Product_Review]
+11/28/2018 02:24:35 PM SQL [INSERT] was not executed successfully [Product_Review].
+11/28/2018 02:24:35 PM SQL [INSERT] was executed successfully for [Product_Review].
+11/28/2018 02:24:57 PM FILE COMPRESSION [COMPLETED]

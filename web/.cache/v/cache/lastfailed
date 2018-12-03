@@ -1,0 +1,4 @@
+{
+  "test/test_web_crawler.py::testFileConverts::test_data_extract_001": true,
+  "test/test_web_crawler.py::testFileConverts::test_sub_data_extract002": true
+}

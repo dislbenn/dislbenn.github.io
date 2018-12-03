@@ -2,8 +2,10 @@
 """Web Crawler designed to find products and ratings for products developed and targeting seniors.
 """
 import os
+import logging as log
 from urllib.request import urlopen
 from bs4 import BeautifulSoup
+from datetime import datetime
 
 __author__ = "Disaiah Bennett"
 __version__ = "0.1"
@@ -27,6 +29,7 @@ class WebCrawler:
         self.sub_url = sub_url
         self.page = page
         self.data = data
+        self.about = about
         self.categories = []
         self.catlinks = []
         self.clean = clean
@@ -108,6 +111,15 @@ class WebCrawler:
         """
         return self.catlinks
 
+    def get_description(self):
+        """Get the description of the product, located within the targeted web page.
+            Returns:
+                self.about: string - description of product.
+            Example:
+                >>> example_description = crawler.get_description()
+        """
+        return self.about
+
     def cleanup(self):
         """Clean up csv files in the current directory, and saves them to csv folder.
             Returns:
@@ -115,10 +127,58 @@ class WebCrawler:
         """
         self.clean = True
         try:
-            os.system(". ../move_csv.sh")
+            os.system(". build/move_csv.sh")
+            log.info("FILE CLEAN [COMPLETED]")
         except OSError:
             print("CLEANING FAILED")
+            log.warning("FILE CLEAN [FAILED]")
+        return self.clean
+
+    def open_log(self):
+        """Creates log file for web-crawler.
+        """
+        date = datetime.now().strftime("%Y%m%d")
+        time_of_day = datetime.now().strftime("%H%M%S")
+
+        filename = "prod_extract_" + date + "_" + time_of_day + ".log"
+        log.basicConfig(filename=filename, filemode='w', level=log.DEBUG, format='%(asctime)s %(message)s', datefmt='%m/%d/%Y %I:%M:%S %p')
+
+
+
+    def log_cleanup(self):
+        """Clean up log files in the current directory, and saves them to log folder.
+            Returns:
+                self.clean: bool - file cleaned.
+        """
+        self.clean = True
+        try:
+            os.system(". build/log_clean.sh")
+            log.info("FILE CLEAN [COMPLETED]")
+        except OSError:
+            print("CLEANING FAILED")
+            log.warning("FILE CLEAN [FAILED]")
         return self.clean
 
     def csv_to_database(self):
-        os.system("python csv_database.py")
+        """Returns extracted csv data to an SQL database.
+            Returns:
+                self.clean: bool - file cleaned.
+        """
+        self.clean = True
+        try:
+            os.system("python csv_database.py")
+            log.info("FILE TRANSFER [COMPLETED]")
+        except OSError:
+            log.warning("SQL FILE TRANSFER [FAILED]")
+        return self.clean
+    
+    def compress(self):
+        """Compresses files received from web-crawler.
+        """
+        self.clean = True
+        try:
+            os.system(". build/compress.sh")
+            log.info("FILE COMPRESSION [COMPLETED]")
+        except OSError:
+            log.warning("FILE COMPRESSION [FAILED]")
+        return self.clean

@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 #
 # Web-Crawler documentation build configuration file, created by
-# sphinx-quickstart on Fri Nov  9 07:19:07 2018.
+# sphinx-quickstart on Tue Nov 27 11:18:19 2018.
 #
 # This file is execfile()d with the current directory set to its
 # containing dir.

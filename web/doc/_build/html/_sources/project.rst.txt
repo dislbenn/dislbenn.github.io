@@ -4,7 +4,7 @@ web\.project package
 Submodules
 ----------
 
-.project\.csv\_database module
+web\.project\.csv\_database module
 ----------------------------------
 
 .. automodule:: project.csv_database
