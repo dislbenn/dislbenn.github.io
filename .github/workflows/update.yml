@@ -1,4 +1,4 @@
-name: Update go module dependencies versions
+name: Update go module dependencies versions.
 
 # Set jobs to be configured and executed by schedule.
 on:
